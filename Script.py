@@ -1,100 +1,90 @@
 class script(object):
-    START_TXT = """𝙷𝙴𝙻𝙾 {},
-𝙼𝚈 𝙽𝙰𝙼𝙴 𝙸𝚂 <a href='https://t.me/IMDB_HPBot'>IMDB_HPBot</a>, 𝙸 𝙲𝙰𝙽 𝙿𝚁𝙾𝚅𝙸𝙳𝙴 𝙼𝙾𝚅𝙸𝙴𝚂, 𝙹𝚄𝚂𝚃 𝙰𝙳𝙳 𝙼𝙴 𝚃𝙾 𝚈𝙾𝚄𝚁 𝙶𝚁𝙾𝚄𝙿 𝙰𝙽𝙳 𝙴𝙽𝙹𝙾𝚈 😍"""
-    HELP_TXT = """𝙷𝙴𝚈 {}
-𝙷𝙴𝚁𝙴 𝙸𝚂 𝚃𝙷𝙴 𝙷𝙴𝙻𝙿 𝙵𝙾𝚁 𝙼𝚈 𝙲𝙾𝙼𝙼𝙰𝙽𝙳𝚂."""
-    ABOUT_TXT = """✯ 𝙼𝚈 𝙽𝙰𝙼𝙴: IMDB_HPBot
-✯ 𝙲𝚁𝙴𝙰𝚃𝙾𝚁: 𝚃𝚎𝚊𝚖 MR.Killer
-✯ 𝙻𝙸𝙱𝚁𝙰𝚁𝚈: 𝙿𝚈𝚁𝙾𝙶𝚁𝙰𝙼
-✯ 𝙻𝙰𝙽𝙶𝚄𝙰𝙶𝙴: 𝙿𝚈𝚃𝙷𝙾𝙽 𝟹
-✯ 𝙳𝙰𝚃𝙰 𝙱𝙰𝚂𝙴: 𝙼𝙾𝙽𝙶𝙾 𝙳𝙱
-✯ 𝙱𝙾𝚃 𝚂𝙴𝚁𝚅𝙴𝚁: 𝙷𝙴𝚁𝙾𝙺𝚄
-✯ 𝙱𝚄𝙸𝙻𝙳 𝚂𝚃𝙰𝚃𝚄𝚂: v1.0.1 [ 𝙱𝙴𝚃𝙰 ]"""
-    SOURCE_TXT = """<b>NOTE:</b>
-- IMDB_HPBot is a open source project. 
-- Source - https://github.com/harshil8981/EvaMaria_HP  
+    START_TXT = """<i><b>Hello 👋 {},</i></b>
 
-<b>DEVS:</b>
-- <a href=https://t.me/Hp_botupdate>Team MRKiller</a>"""
-    MANUELFILTER_TXT = """Help: <b>Filters</b>
+<i><b>I Am Not Only <a href="https://t.me/Itsuniquemovie_robot">Tk Entertainment Bot</a> To Assist You But Also Employed At <a href="https://t.me/Tk_movies_adda">Tk Entertainment</a> Group By <a href="https://t.me/Hello_Mr_BKM">MR.BKM</a> So You Can't Get My Service By Adding Me To Your Group So Don't Waste Your Time & Data</i></b> 😉
 
-- Filter is the feature were users can set automated replies for a particular keyword and tessa will respond whenever a keyword is found the message
+<i><b>Better You Click Below & Join <a href="https://t.me/Tk_movies_adda">Tk Entertainment</a> & Feel The Experience Of Downloading Unlimited Movies/Series</i></b> ✅"""
+     
+    HELP_TXT = """<i><b>Hello 👋 {},</i></b>
 
-<b>NOTE:</b>
-1. IMDB_HPBot should have admin privillage.
-2. only admins can add filters in a chat.
-3. alert buttons have a limit of 64 characters.
+<i><b>I can Guide You Through All Of <a href="https://t.me/Itsuniquemovie_robot">Tk Entertainment Bot</a>'s Cool Features & How To Properly Use Them. Use The Buttons Below To Navigate Through All Of The Modules.</i></b>"""
 
-<b>Commands and Usage:</b>
-• /filter - <code>add a filter in chat</code>
-• /filters - <code>list all the filters of a chat</code>
-• /del - <code>delete a specific filter in chat</code>
-• /delall - <code>delete the whole filters in a chat (chat owner only)</code>"""
-    BUTTON_TXT = """Help: <b>Buttons</b>
+    PROFESSOR_99 = """<i><b>Hello 👋 {},</i></b>
 
-- IMDB_HPBot Supports both url and alert inline buttons.
+<i><b>I Am Not Only <a href="https://t.me/Itsuniquemovie_robot">Tk Entertainment Bot</a> To Assist You But Also Employed At <a href="https://t.me/Tk_movies_adda">Tk Entertainment</a> Group By <a href="https://t.me/Hello_Mr_BKM">MR.BKM</a> So You Can't Get My Service By Adding Me To Your Group So Don't Waste Your Time & Data</i></b> 😉
 
-<b>NOTE:</b>
-1. Telegram will not allows you to send buttons without any content, so content is mandatory.
-2. IMDB_HPBot supports buttons with any telegram media type.
-3. Buttons should be properly parsed as markdown format
+<i><b>Better You Click Below & Join <a href="https://t.me/Tk_movies_adda">Tk Entertainment</a> & Feel The Experience Of Downloading Unlimited Movies/Series</i></b> ✅
 
-<b>URL buttons:</b>
-<code>[Button Text](buttonurl:https://t.me/IMDB_HPBot)</code>
+<i><b>For More Information Click ℹ️ Help</i></b>"""
+     
+    ALIVE_TXT = """Module :- Alive
 
-<b>Alert buttons:</b>
-<code>[Button Text](buttonalert:This is an alert message)</code>"""
-    AUTOFILTER_TXT = """Help: <b>Auto Filter</b>
+- To Find Out If I'm Dead Or Not
 
-<b>NOTE:</b>
-1. Make me the admin of your channel if it's private.
-2. make sure that your channel does not contains camrips, porn and fake files.
-3. Forward the last message to me with quotes.
- I'll add all the files in that channel to my db."""
-    CONNECTION_TXT = """Help: <b>Connections</b>
+📚 AVAILABLE COMMANDS :-
 
-- Used to connect bot to PM for managing filters 
-- it helps to avoid spamming in groups.
+★ /alive - Check I'm Alive Or Not 
 
-<b>NOTE:</b>
-1. Only admins can add a connection.
-2. Send <code>/connect</code> for connecting me to ur PM
+Maintained By ✔️ <a href="https://t.me/Hello_Mr_BKM">MR.BKM</a>"""
 
-<b>Commands and Usage:</b>
-• /connect  - <code>connect a particular chat to your PM</code>
-• /disconnect  - <code>disconnect from a chat</code>
-• /connections - <code>list all your connections</code>"""
-    EXTRAMOD_TXT = """Help: <b>Extra Modules</b>
+    IMDB_TXT = """Module :- IMDB Info
 
-<b>NOTE:</b>
-these are the extra features of tessa
+- A Module To Get The Movie Informations. Use This Module To Get Movie Informations.
 
-<b>Commands and Usage:</b>
-• /id - <code>get id of a specifed user.</code>
-• /info  - <code>get information about a user.</code>
-• /imdb  - <code>get the film information from IMDb source.</code>
-• /search  - <code>get the film information from various sources.</code>"""
-    ADMIN_TXT = """Help: <b>Admin mods</b>
+📚 AVAILABLE COMMANDS :-
 
-<b>NOTE:</b>
-This module only works for my admins
+★ /imdb [Movie Name] - Get The Film Information From IMDB Source
 
-<b>Commands and Usage:</b>
-• /logs - <code>to get the rescent errors</code>
-• /stats - <code>to get status of files in db.</code>
-• /users - <code>to get list of my users and ids.</code>
-• /chats - <code>to get list of the my chats and ids </code>
-• /leave  - <code>to leave from a chat.</code>
-• /disable  -  <code>do disable a chat.</code>
-• /ban  - <code>to ban a user.</code>
-• /unban  - <code>to unban a user.</code>
-• /channel - <code>to get list of total connected channels</code>
-• /broadcast - <code>to broadcast a message to all users</code>"""
+Maintained By ✔️ <a href="https://t.me/Hello_Mr_BKM">MR.BKM</a>"""
+
+    LINK_TXT = """Module :- Invite Link
+
+- You Can Easily Find Group Invitation Link
+
+📚 AVAILABLE COMMAND :-
+
+★ /link - To Get Movie Time Group Link
+
+Maintained By ✔️ <a href="https://t.me/Hello_Mr_BKM">MR.BKM</a>"""
+
+    FAQ_TXT = """
+📌 Read The FAQ Before Contacting Support
+✯ ━━━━━ ✧ ━━━━━ ✯
+👉 Here Are Answers To Frequently Asked Questions About Movie Time 
+👉 If You Did Not Find The Answer To Your Question, Please Ask ✔️ <a href="https://t.me/Hello_Mr_Lucifer">Hello_Mr_BKM</a>
+
+Maintained By ✔️ <a href="https://t.me/Hello_Mr_BKM">MR.BKM</a>"""
+
+    IDS_TXT = """Module :- IDs
+
+- A Module To Fetch Telegram User, Group, Channel & Sticker Info
+
+📚 AVAILABLE COMMANDS :-
+
+★ /id - To Get Telegram User ID
+★ /info - To Get User Information
+★ /json - To Get All Info
+★ /stickerid - To Get TG Sticker ID
+
+Maintained By ✔️ <a href="https://t.me/Hello_Mr_BKM">MR.BKM</a>"""
+
+    SONG_TXT = """Module :- Song
+
+- Music Or Video Download Modules, For Those Who Love Music Or Video
+
+📚 AVAILABLE COMMANDS :-
+
+★ /Song [Song Name] - To Download Music
+★ /video [Video Name] - To Download Video 
+
+Maintained By ✔️ <a href="https://t.me/Hello_Mr_BKM">MR.BKM</a>"""
+
     STATUS_TXT = """★ 𝚃𝙾𝚃𝙰𝙻 𝙵𝙸𝙻𝙴𝚂: <code>{}</code>
 ★ 𝚃𝙾𝚃𝙰𝙻 𝚄𝚂𝙴𝚁𝚂: <code>{}</code>
 ★ 𝚃𝙾𝚃𝙰𝙻 𝙲𝙷𝙰𝚃𝚂: <code>{}</code>
 ★ 𝚄𝚂𝙴𝙳 𝚂𝚃𝙾𝚁𝙰𝙶𝙴: <code>{}</code> 𝙼𝚒𝙱
 ★ 𝙵𝚁𝙴𝙴 𝚂𝚃𝙾𝚁𝙰𝙶𝙴: <code>{}</code> 𝙼𝚒𝙱"""
+
     LOG_TEXT_G = """#NewGroup
 Group = {}(<code>{}</code>)
 Total Members = <code>{}</code>
